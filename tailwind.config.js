@@ -1,12 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["*"],
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./src/components/*.js",
+    "./public/*.{html}",
+  ],
   theme: {
     extend: {},
   },
   plugins: [
-    require("tailwindcss-brand-colors"),    
-    require('tailwindcss-debug-screens'),  
-  ],
+    require('tailwindcss-debug-screens'),
+  ]
 }
-
